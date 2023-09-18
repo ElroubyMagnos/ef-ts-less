@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Majesty</title>
+    <link rel="stylesheet" href="/ElroubyFramework/main.css" />
+    <link rel="stylesheet" href="/less/custom.css" />
+</head>
+<body>
+    <nav class='p-5px flex-row'>
+        <img class="width-200px height-75px" src="logo.png" alt="" />
+
+        <ul class='flex-row flex-wrap mr-10px'>
+            <li><button onclick="Navigate(0);">Home</button></li>
+            <li><button onclick="Navigate(1);">Public</button></li>
+            <li><button onclick="Navigate(2);">Private</button></li>
+            <li><button onclick="Navigate(3);">Publish</button></li>
+            <li><button onclick="Navigate(4);">Sign Up</button></li>
+            <li><button onclick="Navigate(5);">Sign In</button></li>
+            <li><button onclick="Deletelc();BreakLine();">Sign Out</button></li>
+        </ul>
+    </nav>
+
+    <div id='Home' class="flex-row flex-wrap">
+        
+    </div>
+
+    <div id='Public' class="flex-row flex-wrap">
+        
+    </div>
+
+    <div id='Private' class="flex-row flex-wrap">
+        
+    </div>
+
+    <div id='Publish'>
+        <form method="post" class='pubcontainer'>
+            <input type="text" placeholder="Code Title" required />
+            <textarea maxlength="1000" placeholder="Code Container" required></textarea>
+            <select class='width-100px p-15px'>
+                <option value="Public">Public</option>
+                <option value="Private">Private</option>
+            </select>
+            <button type="submit">Publish</button>
+        </form>
+    </div>
+
+    <div id='SignUP'>
+        <form id='signupform' method="post" class='signupcontainer'>
+            <input type="text" placeholder="Firstname" required />
+            <input type="text" placeholder="Lastname" required />
+
+            <input type="text" onchange="CheckUsernameExist(this);" placeholder="Username" required />
+            <p style="color: red;" id='usernameerror'>Username already exist</p>
+            <input type="email" onchange="CheckEmailExist(this);" placeholder="Email" required />
+            <p style="color: red;" id='emailerror'>Email already exist</p>
+
+            <input type="password" placeholder="Password" required />
+            <input type="password" placeholder="Confirm Password" required />
+            <p style="color: red;" id='passworderror'>Password and Confirm is not match</p>
+            <input type="submit" value='Send' />
+        </form>
+    </div>
+
+    <div id='SignIn'>
+        <form id='signinform' method="post" class='signincontainer'>
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" required />
+            <p style="color: red;text-align: center;" id='signinerror'>Username or Password is not match!</p>
+            <input type="submit" value='Login' />
+        </form>
+    </div>
+
+    <script type="text/javascript" src="/ElroubyFramework/js/main.js"></script>
+    <script type="text/javascript" src="/ElroubyFramework/js/dynamics.js"></script>
+    <script type="text/javascript" src="/ElroubyFramework/js/linking.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script>
+        BreakLine();
+    </script>
+</body>
+</html>

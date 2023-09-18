@@ -1,0 +1,205 @@
+* {
+  transition: all linear 1s;
+}
+nav {
+  background-color: #176B87;
+  justify-content: space-between;
+}
+nav ul li button {
+  background-color: #9D76C1;
+  border: 1px solid black;
+  font-size: larger;
+  color: white;
+  padding: 5px 15px;
+}
+nav ul li button:hover {
+  background-color: #E5CFF7;
+  font-size: x-large;
+}
+#Home {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+#Home .codecontainer {
+  background-color: #176B87;
+  width: 300px;
+  height: fit-content;
+  padding: 10px;
+  color: white;
+}
+#Home .codecontainer .headone {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#Home .codecontainer textarea {
+  resize: none;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+#Home .codecontainer .btncontainer {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+}
+#Home .codecontainer .btncontainer button {
+  background-color: #9D76C1;
+  border: none;
+  padding: 3px 6px;
+}
+#Home .codecontainer .btncontainer button:hover {
+  background-color: #E5CFF7;
+  font-size: large;
+}
+#Publish {
+  text-align: center !important;
+  width: 80%;
+  margin: 10px auto;
+}
+#Publish .pubcontainer {
+  background-color: #176B87;
+  height: fit-content;
+  padding: 10px;
+}
+#Publish .pubcontainer input {
+  padding: 3px;
+  border-radius: 10px;
+  outline: none;
+  margin: 5px auto;
+  width: 400px;
+  max-width: 100%;
+}
+#Publish .pubcontainer textarea {
+  resize: none;
+  width: 400px;
+  height: 450px;
+  max-width: 100%;
+}
+#Publish .pubcontainer button {
+  background-color: #9D76C1;
+  border: none;
+  font-size: large;
+  max-width: 100%;
+}
+#Publish .pubcontainer button:hover {
+  background-color: #E5CFF7;
+  font-size: x-large;
+}
+#Publish input,
+#Publish textarea,
+#Publish button {
+  display: block;
+  margin: 5px auto;
+}
+.signupcontainer {
+  margin: 5px auto;
+  background-color: #176B87;
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+  max-width: 100%;
+}
+@media (max-width: 700px) {
+  .signupcontainer {
+    padding: 5px;
+  }
+}
+.signupcontainer input {
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.signupcontainer input:placeholder-shown {
+  color: gray;
+}
+.signupcontainer input[type="submit"] {
+  margin: 10px auto;
+  background-color: white;
+  border: 0;
+  outline: 0;
+}
+.signupcontainer input[type="submit"]:hover {
+  background-color: #E5CFF7;
+}
+.signincontainer {
+  margin: 5px auto;
+  background-color: #176B87;
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+  max-width: 100%;
+}
+@media (max-width: 700px) {
+  .signincontainer {
+    padding: 5px;
+  }
+}
+.signincontainer input {
+  display: block;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 5px;
+}
+.signincontainer input:placeholder-shown {
+  color: gray;
+}
+.signincontainer input[type="submit"] {
+  margin: 10px auto;
+  background-color: white;
+  border: 0;
+  outline: 0;
+}
+.signincontainer input[type="submit"]:hover {
+  background-color: #E5CFF7;
+}
+#Public,
+#Private {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+#Public .codecontainer,
+#Private .codecontainer {
+  background-color: #176B87;
+  width: 300px;
+  height: fit-content;
+  padding: 10px;
+  color: white;
+}
+#Public .codecontainer .headone,
+#Private .codecontainer .headone {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#Public .codecontainer textarea,
+#Private .codecontainer textarea {
+  resize: none;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+#Public .codecontainer .btncontainer,
+#Private .codecontainer .btncontainer {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+}
+#Public .codecontainer .btncontainer button,
+#Private .codecontainer .btncontainer button {
+  background-color: #9D76C1;
+  border: none;
+  padding: 3px 6px;
+}
+#Public .codecontainer .btncontainer button:hover,
+#Private .codecontainer .btncontainer button:hover {
+  background-color: #E5CFF7;
+  font-size: large;
+}
